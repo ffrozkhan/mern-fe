@@ -1,0 +1,81 @@
+.navParent {
+  height: 10vh;
+  background-color: rgb(75, 75, 75);
+  display: flex;
+  justify-content: space-around;
+}
+.leftNav {
+  width: 20%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightNav {
+  width: 65%;
+  height: 100%;
+  line-height: 10vh;
+}
+.rightNav .navLink {
+  color: white;
+  padding: 10px 25px;
+  font-size: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#profileLink {
+  display: inline-block;
+  width: 150px;
+  padding: 0;
+}
+
+.profileLinkContainer {
+  position: relative;
+  /* background-color: rgb(75, 75, 75); */
+}
+.profileLinkContainer:hover {
+  /* position: relative; */
+  background-color: rgb(75, 75, 75);
+}
+.profileLinkContainer:hover .profileDropdown {
+  display: block;
+}
+.profileDropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(75, 75, 75);
+}
+.dropLinks {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.dropLinks:hover {
+  color: black;
+  background-color: white;
+}
+.rightNav .navLink:hover {
+  color: black;
+}
+.mainParent {
+  height: 80vh;
+  overflow: auto;
+}
+
+.footerParent {
+  height: 10vh;
+  background-color: rgb(75, 75, 75);
+}
+
+.bottomFooter {
+  background-color: rgb(75, 75, 75);
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

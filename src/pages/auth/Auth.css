@@ -1,0 +1,35 @@
+.loginParent {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  width: 30%;
+  border: 2px solid black;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.loginTitle {
+  height: 30%;
+  width: 70%;
+}
+.loginFields {
+  height: 40%;
+  width: 70%;
+}
+.loginFields input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+}
+
+.loginBtns {
+  height: 20%;
+  width: 70%;
+}
