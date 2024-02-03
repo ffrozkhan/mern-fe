@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [auth, setAuth] = useAuth();
   const handleUserLogout = () => {
-    // localStorage.removeItem("auth");
-    // setAuth({ user: null, token: "" });
+    localStorage.removeItem("auth");
+    setAuth({ user: null, token: "" });
   };
   return (
     <div className="navParent">
@@ -53,7 +53,7 @@ const Navbar = () => {
               {auth?.user && (
                 <Link
                   onClick={() => handleUserLogout()}
-                  // to="/login"
+                  to="/login"
                   className="dropLinks"
                 >
                   Logout
