@@ -7,6 +7,9 @@ import { useAuth } from "../../context/auth";
 import RegisterUser from "../../pages/auth/RegisterUser";
 import UserRoutes from "../routes/UserRoutes";
 import UserProfile from "../../pages/user/UserProfile";
+import PageNotFound from "../../pages/auth/PageNotFound";
+import AdminProfile from "../../pages/admin/AdminProfile";
+import AdminRoutes from "../routes/AdminRoutes";
 
 const Main = () => {
   const [auth, setAuth] = useAuth();
@@ -19,10 +22,13 @@ const Main = () => {
         <Route path="/forgot-password" />
         <Route path="/" element={<Home />} />
         {/* https://localhost:3000/user */}
-        <Route path="/user" element={<UserRoutes />}>
+        <Route path="/dashboard/user/" element={<UserRoutes />}>
           <Route path="profile" element={<UserProfile />} />
         </Route>
-        <Route />
+        <Route path="/dashboard/admin" element={<AdminRoutes />}>
+          <Route path="profile" element={<AdminProfile />} />
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       {/* </BrowserRouter> */}
     </div>

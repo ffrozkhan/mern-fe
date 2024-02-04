@@ -1,0 +1,48 @@
+.profileParent {
+  height: 100%;
+  /* background-color: red; */
+}
+.profileLeft {
+  width: 40%;
+  height: 100%;
+  box-shadow: 2px 0 15px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileContainer {
+  height: 80%;
+  width: 70%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.profilePicture {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 1px 0 15px black;
+  /* border: 1px solid green; */
+  /* background-color: black; */
+}
+
+.profileDetails > p {
+  font-size: 20px;
+  padding: 15px;
+  /* width: 60%; */
+  /* background-color: black; */
+  color: black;
+  text-align: left;
+  box-shadow: 0 1px 5px black;
+}
+.profileDetails {
+  width: 80%;
+  /* border: 1px solid crimson; */
+  /* background-color: black; */
+}
+
+.profileDetails > p > b {
+}

@@ -14,7 +14,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Alert from "@mui/material/Alert";
 import { Snackbar } from "@mui/material";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 
 function Copyright(props) {
@@ -43,6 +43,7 @@ const Login = () => {
   const [alertMsg, setAlertMsg] = useState("");
   const [auth, setAuth] = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleCloseAlert = () => {
     setOpenAlert(false);
@@ -70,7 +71,7 @@ const Login = () => {
       );
       setAuth({ user: response.data.data, token: response.data.token });
       localStorage.setItem("auth", JSON.stringify(response.data));
-      navigate("/");
+      navigate(location.state || "/");
     } catch (error) {}
   };
   return (

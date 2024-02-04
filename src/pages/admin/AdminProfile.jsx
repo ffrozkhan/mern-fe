@@ -1,8 +1,7 @@
 import React from "react";
 import { useAuth } from "../../context/auth";
-import "./User.css";
 
-const UserProfile = () => {
+const AdminProfile = () => {
   const [auth, setAuth] = useAuth();
   return (
     <div className="profileParent">
@@ -11,7 +10,7 @@ const UserProfile = () => {
           <div className="profilePicture"></div>
           <div className="profileDetails">
             <p>
-              <b>Name:</b>
+              <b>Admin:</b>
               {auth?.user?.fullname}
             </p>
             <p>
@@ -34,4 +33,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default AdminProfile;

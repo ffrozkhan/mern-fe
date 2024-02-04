@@ -40,11 +40,16 @@ const Navbar = () => {
             className="profileLinkContainer"
             style={{ display: "inline-block" }}
           >
-            <Link to="" className="navLink" id="profileLink">
+            <Link to="#" className="navLink" id="profileLink">
               {auth?.user?.fullname.split(" ")[0]}
             </Link>
             <div className="profileDropdown">
-              <Link className="dropLinks" to="/user/profile">
+              <Link
+                className="dropLinks"
+                to={`/dashboard/${
+                  auth?.user?.role == 1 ? "admin" : "user"
+                }/profile`}
+              >
                 Your Profile
               </Link>
               <Link className="dropLinks" to="">
