@@ -96,8 +96,12 @@ const AddProduct = ({ setValue }) => {
               >
                 <option value="">Select</option>
                 {categoryOptions &&
-                  categoryOptions.map((item) => {
-                    return <option value={item._id}>{item.name}</option>;
+                  categoryOptions.map((item, index) => {
+                    return (
+                      <option key={index} value={item._id}>
+                        {item.name}
+                      </option>
+                    );
                   })}
               </select>
             </div>
