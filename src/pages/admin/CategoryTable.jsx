@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
@@ -39,7 +39,7 @@ function EditToolbar(props) {
 }
 
 const CategoryTable = ({ categories }) => {
-  const [rows, setRows] = React.useState(categories);
+  const [rows, setRows] = useState(categories);
   const [rowModesModel, setRowModesModel] = React.useState({});
 
   const handleRowEditStop = (params, event) => {
