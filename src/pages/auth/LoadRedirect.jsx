@@ -8,7 +8,7 @@ const LoadRedirect = ({ path = "/login" }) => {
   console.log("Load Redirect");
 
   useEffect(() => {
-    console.log(location);
+    // console.log(location);
     const test = setTimeout(() => {
       navigate(path, { state: location.pathname });
     }, 5000);

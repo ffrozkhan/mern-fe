@@ -52,9 +52,11 @@ const Navbar = () => {
               >
                 Your Profile
               </Link>
-              <Link className="dropLinks" to="">
-                Dashboard
-              </Link>
+              {auth?.user?.role == 1 && (
+                <Link className="dropLinks" to="/dashboard/admin/controls">
+                  Dashboard
+                </Link>
+              )}
               {auth?.user && (
                 <Link
                   onClick={() => handleUserLogout()}

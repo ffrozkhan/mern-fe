@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="textValue" />
+    <button class="btn">Speak</button>
+    <script>
+      const speakMsg = document.querySelector("#textValue");
+      const speakBtn = document.querySelector(".btn");
+      speakBtn.addEventListener("click", function () {
+        // console.log("clicked");
+        console.log(window.speechSynthesis.getVoices());
+        const msg = new window.SpeechSynthesisUtterance(speakMsg.value);
+        window.speechSynthesis.speak(msg);
+      });
+      window.addEventListener("DOMContentLoaded", function () {
+        const msgTimeout = setTimeout(() => {
+          const msg = new window.SpeechSynthesisUtterance(
+            "Exaltechs Welcomes You!"
+          );
+          console.log("wait");
+          window.speechSynthesis.speak(msg);
+        }, 5000);
+        // clearInterval(msgTimeout);
+      });
+    </script>
+  </body>
+</html>

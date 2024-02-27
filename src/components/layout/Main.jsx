@@ -10,6 +10,9 @@ import UserProfile from "../../pages/user/UserProfile";
 import PageNotFound from "../../pages/auth/PageNotFound";
 import AdminProfile from "../../pages/admin/AdminProfile";
 import AdminRoutes from "../routes/AdminRoutes";
+import AdminControls from "../../pages/admin/AdminControls";
+import CategoryHome from "../../pages/admin/CategoryHome";
+import AdminProductsHome from "../../pages/admin/AdminProductsHome";
 
 const Main = () => {
   const [auth, setAuth] = useAuth();
@@ -27,6 +30,8 @@ const Main = () => {
         </Route>
         <Route path="/dashboard/admin" element={<AdminRoutes />}>
           <Route path="profile" element={<AdminProfile />} />
+          <Route path="controls" element={<AdminControls />} />
+          <Route path="controls/products" element={<AdminProductsHome />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

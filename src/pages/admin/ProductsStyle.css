@@ -1,0 +1,70 @@
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.formContainer {
+  padding: 50px;
+  width: 40%;
+  /* background-color: red; */
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+.imageContainer {
+  /* background-color: green; */
+  width: 30%;
+  height: 40vh;
+  padding: 50px;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.fieldContainer {
+  width: 80%;
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+.fieldContainer > div {
+  width: 40%;
+  height: 100%;
+  /* background-color: grey; */
+  text-align: left;
+  line-height: 35px;
+}
+#title {
+  display: block;
+  height: 90%;
+  outline: none;
+}
+
+.labelDiv label {
+  /* color: red; */
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1976d2;
+}
+
+.submitContainer {
+  width: 80%;
+}
+.submitContainer button {
+  display: block;
+  width: 100%;
+  height: 35px;
+  color: white;
+  background-color: #1976d2;
+  border: none;
+  font-size: 20px;
+}
+.inputDiv {
+  /* display: inline; */
+  float: right;
+}

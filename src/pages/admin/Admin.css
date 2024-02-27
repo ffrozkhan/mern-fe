@@ -1,0 +1,34 @@
+.controlsParent {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sideMenu {
+  width: 240px;
+  background-color: black;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.mainMenu {
+  width: calc(100% - 250px);
+  /* background-color: grey; */
+  height: 100%;
+  /* text-align: right; */
+  display: flex;
+  justify-content: center;
+}
+
+.menuItem {
+  color: white;
+  width: 80%;
+  text-align: left;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.menuItem:hover {
+  color: black;
+  background-color: white;
+}

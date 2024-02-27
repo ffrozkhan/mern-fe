@@ -63,7 +63,7 @@ const RegisterUser = () => {
       alert("something went wrong");
     }
   };
-  console.log(newUser);
+  // console.log(newUser);
   return (
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">

@@ -51,7 +51,7 @@ const Login = () => {
   const handleInputChange = (e) => {
     setUserData({ ...userData, [e.target.name]: e.target.value });
   };
-  console.log(userData);
+  // console.log(userData);
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
