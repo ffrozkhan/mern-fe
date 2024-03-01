@@ -12,6 +12,9 @@
   height: 100%;
   /* border: 1px solid red; */
 }
+.sideMenu :nth-child(1){
+  text-decoration: none;
+}
 .mainMenu {
   width: calc(100% - 250px);
   /* background-color: grey; */
